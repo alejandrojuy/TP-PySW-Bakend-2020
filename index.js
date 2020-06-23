@@ -14,6 +14,7 @@ app.use('/api/puntos', require('./routes/puntos.route'));
 //
 app.use('/api/sectores', require('./routes/sectores.route'));
 app.use('/api/puntos1', require('./routes/puntos1.route'));
+app.use('/api/puntos2', require('./routes/puntos2.route'));
 
 //setting
 app.set('port', process.env.PORT || 3000);

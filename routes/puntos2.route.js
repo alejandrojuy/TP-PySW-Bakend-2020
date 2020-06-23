@@ -8,8 +8,8 @@ const router = express.Router();
 const punto2Ctrl = require('./../controllers/punto2.controller');
 
 // definiendo rutas
-router.get('/', punto1Ctrl.getMensajes);
-router.post('/', punto1Ctrl.createMensaje);
+router.get('/', punto2Ctrl.getMensajes);
+router.post('/', punto2Ctrl.createMensaje);
  //router.get('/:id', punto1Ctrl.getAsistente);
  //router.put('/:id', punto1Ctrl.editAsistente);
  //router.delete('/:id', punto1Ctrl.deleteAsistente);
