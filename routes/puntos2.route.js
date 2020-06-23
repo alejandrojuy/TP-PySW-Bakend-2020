@@ -5,14 +5,14 @@ const express = require('express');
 const router = express.Router();
 
 //defino controlador para el manejo de CRUD
-const punto1Ctrl = require('./../controllers/punto1.controller');
+const punto2Ctrl = require('./../controllers/punto2.controller');
 
 // definiendo rutas
-router.get('/', punto1Ctrl.getAsistentes);
-router.post('/', punto1Ctrl.createAsistente);
- router.get('/:id', punto1Ctrl.getAsistente);
- router.put('/:id', punto1Ctrl.editAsistente);
- router.delete('/:id', punto1Ctrl.deleteAsistente);
+router.get('/', punto1Ctrl.getMensajes);
+router.post('/', punto1Ctrl.createMensaje);
+ //router.get('/:id', punto1Ctrl.getAsistente);
+ //router.put('/:id', punto1Ctrl.editAsistente);
+ //router.delete('/:id', punto1Ctrl.deleteAsistente);
 
 //exportacion del modulo de rutas
 module.exports = router;
