@@ -6,9 +6,8 @@ const MensajeSchema = new Schema({
     para: {type: String, required: true},
     desde: {type: String, required: true},
     texto: {type: String, required: true},
-    fecha: {type: String, required: true}
-    //,
-   // empresa: {type: Schema.Types.ObjectId, ref: Empresa}
+    fecha: {type: String, required: true},
+    empresa: {type: Schema.Types.ObjectId, ref: Empresa}
 })
 
 

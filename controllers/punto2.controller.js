@@ -2,7 +2,7 @@ const Mensaje = require('../models/mensaje');
 
 const punto2Ctrl = {}
 punto2Ctrl.getMensajes = async (req, res) => {
-    mensajes = await Mensaje.find();
+    mensajes = await Mensaje.find().populate("empresa");
     //populate("sector"); para traer el objeto sector q es
     //atributo de un punto de interes
     res.json(mensajes);
