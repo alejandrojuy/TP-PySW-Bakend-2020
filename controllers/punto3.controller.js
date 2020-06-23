@@ -3,6 +3,7 @@ const Pasaje = require('../models/pasaje');
 const punto3Ctrl = {}
 punto3Ctrl.getPasajes = async (req, res) => {
     pasajes = await Pasaje.find();
+    // cuando es composition no se pone el populate por que llama a todo el objeto 
     //populate("sector"); para traer el objeto sector q es
     //atributo de un punto de interes
     res.json(pasajes);
